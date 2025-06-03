@@ -1,0 +1,17 @@
+services:
+  consumer:
+    image: itziarmensaupc/connector:0.0.1
+    platform: linux/amd64
+    container_name: edc-consumer
+    ports:
+      - "29191:29191"
+      - "29193:29193"
+      - "29194:29194"
+      - "29291:29291"
+      - "29192:29192"
+      - "29195:29195"
+    environment:
+      - EDC_KEYSTORE_PASSWORD=123456
+    volumes:
+      - ./resources/configuration:/app/configuration
+      - ./resources/certs:/app/certs
