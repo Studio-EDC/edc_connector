@@ -44,6 +44,16 @@ dependencies {
     implementation(libs.edc.data.plane.core)
     implementation(libs.edc.data.plane.http)
     implementation(libs.edc.data.plane.iam)
+
+    implementation(libs.edc.management.api.asset)
+    implementation(libs.edc.management.api.catalog)
+    implementation(libs.edc.management.api.contract.agreement)
+    implementation(libs.edc.management.api.contract.definition)
+    implementation(libs.edc.management.api.contract.negotiation)
+    implementation(libs.edc.management.api.policy.definition)
+    implementation(libs.edc.management.api.transfer.process)
+    implementation(libs.edc.management.api.protocol.version)
+
 }
 
 application {

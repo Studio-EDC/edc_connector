@@ -1,6 +1,6 @@
 services:
   consumer:
-    image: itziarmensaupc/connector:0.0.1
+    image: connector
     platform: linux/amd64
     container_name: edc-consumer
     ports:
