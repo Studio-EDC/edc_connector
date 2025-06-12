@@ -54,6 +54,22 @@ dependencies {
     implementation(libs.edc.management.api.transfer.process)
     implementation(libs.edc.management.api.protocol.version)
 
+    implementation(libs.edc.vault.hashicorp.spi)
+    implementation(libs.edc.vault.hashicorp)
+    implementation(libs.edc.transaction.local)
+
+    implementation("org.postgresql:postgresql:42.7.3")
+    implementation(libs.edc.sql.core)
+    implementation(libs.edc.sql.pool.apache.commons)
+    implementation(libs.edc.asset.index.sql)
+    implementation(libs.edc.contract.definition.store.sql)
+    implementation(libs.edc.contract.negotiation.store.sql)
+    implementation(libs.edc.control.plane.sql)
+    implementation(libs.edc.policy.definition.store.sql)
+    implementation(libs.edc.transfer.process.store.sql)
+
+    implementation("ch.qos.logback:logback-classic:1.4.14")
+
 }
 
 application {

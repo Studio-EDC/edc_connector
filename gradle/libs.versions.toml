@@ -52,7 +52,6 @@ edc-management-api-test-fixtures = { module = "org.eclipse.edc:management-api-te
 edc-monitor-jdk-logger = { module = "org.eclipse.edc:monitor-jdk-logger", version.ref = "edc" }
 edc-token-core = { module = "org.eclipse.edc:token-core", version.ref = "edc" }
 edc-transfer-data-plane-signaling = { module = "org.eclipse.edc:transfer-data-plane-signaling", version.ref = "edc" }
-edc-vault-hashicorp = { module = "org.eclipse.edc:vault-hashicorp", version.ref = "edc" }
 edc-validator-data-address-http-data = { module = "org.eclipse.edc:validator-data-address-http-data", version.ref = "edc" }
 edc-web-spi = { module = "org.eclipse.edc:web-spi", version.ref = "edc" }
 jakarta-rsApi = { module = "jakarta.ws.rs:jakarta.ws.rs-api", version.ref = "rsApi" }
@@ -80,7 +79,20 @@ edc-management-api-policy-definition = { module = "org.eclipse.edc:policy-defini
 edc-management-api-transfer-process = { module = "org.eclipse.edc:transfer-process-api", version.ref = "edc" }
 edc-management-api-protocol-version = { module = "org.eclipse.edc:protocol-version-api", version.ref = "edc" }
 
+# Vault 
+edc-vault-hashicorp-spi = { module = "org.eclipse.edc:vault-hashicorp-spi", version.ref = "edc" }
+edc-vault-hashicorp = { module = "org.eclipse.edc:vault-hashicorp", version.ref = "edc" }
+edc-transaction-local = { module = "org.eclipse.edc:transaction-local", version.ref = "edc" }
 
+# SQL
+edc-sql-core = { module = "org.eclipse.edc:sql-core", version.ref = "edc" }
+edc-sql-pool-apache-commons = { module = "org.eclipse.edc:sql-pool-apache-commons", version.ref = "edc" }
+edc-asset-index-sql = { module = "org.eclipse.edc:asset-index-sql", version.ref = "edc" }
+edc-contract-definition-store-sql = { module = "org.eclipse.edc:contract-definition-store-sql", version.ref = "edc" }
+edc-contract-negotiation-store-sql = { module = "org.eclipse.edc:contract-negotiation-store-sql", version.ref = "edc" }
+edc-control-plane-sql = { module = "org.eclipse.edc:control-plane-sql", version.ref = "edc" }
+edc-policy-definition-store-sql = { module = "org.eclipse.edc:policy-definition-store-sql", version.ref = "edc" }
+edc-transfer-process-store-sql = { module = "org.eclipse.edc:transfer-process-store-sql", version.ref = "edc" }
 
 # federated catalog modules
 edc-fc-spi-core = { module = "org.eclipse.edc:federated-catalog-spi", version.ref = "edc" }

@@ -13,17 +13,28 @@ services:
       - IPC_LOCK
     command: server -dev
 
+    networks:
+      - edc-network
+
   postgres:
     image: postgres:15
     container_name: edc-postgres
     environment:
-      POSTGRES_DB: edc
+      POSTGRES_DB: edc_1234
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+    networks:
+      - edc-network
 
 volumes:
   postgres_data:
+
+networks:
+  edc-network:
+    external: true
