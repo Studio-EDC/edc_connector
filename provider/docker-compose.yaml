@@ -10,11 +10,9 @@ services:
       - "19291:19291"
       - "19192:19192"
       - "19195:19195"
-    environment:
-      - EDC_KEYSTORE_PASSWORD=123456
+
     volumes:
       - ./resources/configuration:/app/configuration
-      - ./resources/certs:/app/certs
 
     networks:
       - edc-network

@@ -68,7 +68,11 @@ dependencies {
     implementation(libs.edc.policy.definition.store.sql)
     implementation(libs.edc.transfer.process.store.sql)
 
-    implementation("ch.qos.logback:logback-classic:1.4.14")
+    implementation(libs.edc.token.core)
+    implementation(libs.edc.auth.tokenbased)
+    implementation(libs.edc.auth.spi)
+    implementation(libs.edc.auth.delegated)
+    implementation(libs.edc.auth.configuration)
 
 }
 
