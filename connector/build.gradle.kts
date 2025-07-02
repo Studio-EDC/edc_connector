@@ -54,8 +54,6 @@ dependencies {
     implementation(libs.edc.management.api.transfer.process)
     implementation(libs.edc.management.api.protocol.version)
 
-    implementation(libs.edc.vault.hashicorp.spi)
-    implementation(libs.edc.vault.hashicorp)
     implementation(libs.edc.transaction.local)
 
     implementation("org.postgresql:postgresql:42.7.3")
@@ -73,6 +71,9 @@ dependencies {
     implementation(libs.edc.auth.spi)
     implementation(libs.edc.auth.delegated)
     implementation(libs.edc.auth.configuration)
+
+    implementation(libs.edc.data.plane.spi)
+    implementation(libs.edc.web.spi)
 
 }
 
