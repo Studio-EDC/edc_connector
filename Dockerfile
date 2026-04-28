@@ -5,7 +5,7 @@ COPY . /app
 
 RUN sed -i 's/\r$//' gradlew && chmod +x gradlew && ./gradlew :connector:shadowJar
 
-FROM openjdk:17-jdk-alpine
+FROM eclipse-temurin:17-jre-alpine
 
 WORKDIR /app
 COPY --from=build /app/connector/build/libs/connector.jar /app/connector.jar
