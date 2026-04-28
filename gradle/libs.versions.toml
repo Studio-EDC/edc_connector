@@ -60,6 +60,7 @@ edc-monitor-jdk-logger = { module = "org.eclipse.edc:monitor-jdk-logger", versio
 edc-sts-account-service-local = { module = "org.eclipse.edc:sts-account-service-local", version.ref = "edc" }
 edc-sts-api = { module = "org.eclipse.edc:sts-api", version.ref = "edc" }
 edc-sts-core = { module = "org.eclipse.edc:sts-core", version.ref = "edc" }
+edc-token-lib = { module = "org.eclipse.edc:token-lib", version.ref = "edc" }
 edc-transfer-data-plane-signaling = { module = "org.eclipse.edc:transfer-data-plane-signaling", version.ref = "edc" }
 edc-validator-data-address-http-data = { module = "org.eclipse.edc:validator-data-address-http-data", version.ref = "edc" }
 edc-web-spi = { module = "org.eclipse.edc:web-spi", version.ref = "edc" }

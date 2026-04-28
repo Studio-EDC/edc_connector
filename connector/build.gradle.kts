@@ -24,6 +24,7 @@ dependencies {
     implementation(libs.edc.control.plane.api)
     implementation(libs.edc.control.plane.core)
     implementation(libs.edc.token.core)
+    implementation(libs.edc.token.lib)
     implementation(libs.edc.dsp)
     implementation(libs.edc.identity.trust.service)
     implementation(libs.edc.identity.did.core)
