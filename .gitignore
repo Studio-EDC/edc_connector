@@ -1,2 +1,4 @@
 .gradle
+.gradle-user-home
 connector/build
+connector/bin

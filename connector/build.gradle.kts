@@ -25,9 +25,16 @@ dependencies {
     implementation(libs.edc.control.plane.core)
     implementation(libs.edc.token.core)
     implementation(libs.edc.dsp)
+    implementation(libs.edc.identity.trust.service)
+    implementation(libs.edc.identity.did.core)
+    implementation(libs.edc.identity.did.web)
+    implementation(libs.edc.dcp.core)
+    implementation(libs.edc.oauth2.client)
+    implementation(libs.edc.sts.core)
+    implementation(libs.edc.sts.api)
+    implementation(libs.edc.sts.account.service.local)
     implementation(libs.edc.http)
     implementation(libs.edc.configuration.filesystem)
-    implementation(libs.edc.iam.mock)
     implementation(libs.edc.management.api)
     implementation(libs.edc.transfer.data.plane.signaling)
     implementation(libs.edc.validator.data.address.http.data)
@@ -74,6 +81,8 @@ dependencies {
 
     implementation(libs.edc.data.plane.spi)
     implementation(libs.edc.web.spi)
+    implementation(libs.edc.jwt.signer.spi)
+    implementation(libs.edc.keys.spi)
 
 }
 
@@ -81,11 +90,7 @@ application {
     mainClass.set("$group.boot.system.runtime.BaseRuntime")
 }
 
-var distTar = tasks.getByName("distTar")
-var distZip = tasks.getByName("distZip")
-
 tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
     mergeServiceFiles()
     archiveFileName.set("connector.jar")
-    dependsOn(distTar, distZip)
 }
